@@ -1,0 +1,61 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    background-image: url(./assets/background1.jpg);
+}
+
+.header-container {
+    height: 60px;
+    background-color: rgb(107, 129, 135);
+}
+
+.main-container {}
+
+.flowers-box {
+    width: 820px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    column-gap: 10px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.peony {
+    width: 200px;
+    height: 200px;
+    background-size: contain;
+    border-radius: 30px;
+}
+
+.flower-1 {
+    background-image: url(./assets/flower_1.jpg);
+}
+
+.flower-2 {
+    background-image: url(./assets/flower_2.jpg);
+
+}
+
+.flower-3 {
+    background-image: url(./assets/flower_3.jpg);
+}
+
+.flower-4 {
+    background-image: url(./assets/flower_4.jpg);
+}
+
+.flower-5 {
+    background-image: url(./assets/flower_5.jpg);
+}
+
+.footer-container {
+    height: 60px;
+    background-color: rgb(107, 129, 135);
+}
