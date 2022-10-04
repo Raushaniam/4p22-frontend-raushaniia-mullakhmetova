@@ -1,3 +1,12 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('./assets/fonts/Roboto-Medium.woff2') format('woff2'),
+        url('./assets/fonts/Roboto-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -6,18 +15,45 @@ body {
     width: 100%;
     height: auto;
     margin: 0 auto;
-    background-image: url(./assets/background1.jpg);
+    background-image: url(./assets/jpg/background1.jpg);
+    font-family: 'Roboto';
+    color: rgb(0, 0, 0);
+    font-size: 14px;
 }
 
 .header-container {
-    height: 60px;
-    background-color: rgb(107, 129, 135);
+    width: 100%;
+    height: 50px;
+    background-color: rgb(107, 129, 135, 78%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.main-container {}
+h1 {
+    margin: 0;
+    color: rgb(255 233 255);
+    text-shadow: 2px 2px 4px #000000;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.main-container {
+    width: 100%;
+    min-height: calc(100vh - 80px);
+    font-size: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .flowers-box {
-    width: 820px;
+    width: 620px;
     height: auto;
     display: flex;
     flex-wrap: wrap;
@@ -27,35 +63,76 @@ body {
     align-items: center;
 }
 
+.flower-card {
+    width: 200px;
+    background-color: rgb(243, 243, 243, 69%);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid rgb(110 94 110);
+    border-top: none;
+}
+
 .peony {
     width: 200px;
     height: 200px;
     background-size: contain;
-    border-radius: 30px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border: 1px solid rgb(110 94 110);
+    border-bottom: none;
+    background-repeat: no-repeat;
 }
 
 .flower-1 {
-    background-image: url(./assets/flower_1.jpg);
+    background-image: url(./assets/jpg/flower_1.jpg);
 }
 
 .flower-2 {
-    background-image: url(./assets/flower_2.jpg);
-
+    background-image: url(./assets/jpg/flower_2.jpg);
 }
 
 .flower-3 {
-    background-image: url(./assets/flower_3.jpg);
+    background-image: url(./assets/jpg/flower_3.jpg);
 }
 
 .flower-4 {
-    background-image: url(./assets/flower_4.jpg);
+    background-image: url(./assets/jpg/flower_4.jpg);
 }
 
 .flower-5 {
-    background-image: url(./assets/flower_5.jpg);
+    background-image: url(./assets/jpg/flower_5.jpg);
+}
+
+button {
+    font-size: 12px;
+    border: none;
+    color: rgb(63 34 63);
+    background: transparent;
+    font-family: 'Roboto';
+    margin: 0px;
+    padding: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: rgb(168, 157, 168);
+    border-radius: 8px;
 }
 
 .footer-container {
-    height: 60px;
-    background-color: rgb(107, 129, 135);
+    width: 100%;
+    height: 30px;
+    background-color: rgb(107, 129, 135, 78%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: aliceblue;
+    cursor: pointer;
 }
