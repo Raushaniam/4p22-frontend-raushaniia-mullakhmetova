@@ -1,0 +1,56 @@
+body {
+    text-align: center;
+    font-size: 10px;
+    font-weight: 600;
+}
+
+table {
+    border-collapse: collapse;
+    width: 800px;
+    margin: 0 auto;
+}
+
+.table-main {
+    border: 3px solid #000;
+    border-bottom: none;
+}
+
+.additional-table {
+    border: 3px solid #000;
+    border-top: none;
+}
+
+th {
+    border: 1px solid #000;
+}
+
+td {
+    text-align: center;
+    border: 1px solid #000;
+    width: 6%;
+}
+
+td:first-child {
+    width: 0%;
+}
+
+.pink {
+    background-color: rgb(250, 172, 208);
+}
+
+.yellow {
+    background-color: rgb(250, 245, 172);
+}
+
+.blue {
+    background-color: rgb(172, 245, 250);
+}
+
+.purple {
+    background-color: rgb(223, 172, 250);
+}
+
+footer {
+    padding-top: 40px;
+    font-size: 20px;
+}
