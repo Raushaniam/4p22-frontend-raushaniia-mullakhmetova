@@ -1,0 +1,306 @@
+@font-face {
+    font-family: "Roboto";
+    src: url("./assets/fonts/roboto/Roboto-Bold.woff2") format("woff2"),
+        url("./assets/fonts/roboto/Roboto-Bold.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("./assets/fonts/inter/Inter-Bold.woff2") format("woff2"),
+        url("./assets/fonts/inter/Inter-Bold.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    font-family: "Roboto", sans-serif;
+    line-height: calc(23 / 720 * 100vh);
+    font-size: calc(14 / 720 * 100vh);
+    color: #787878;
+    background-color: #ffffff;
+}
+
+body {
+    margin: 0 auto;
+}
+
+button {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.wrapper {
+    max-width: 1440px;
+    width: 100%;
+    max-height: 821px;
+    height: 100%;
+    position: relative;
+    margin: 0;
+}
+
+.wrapper__header {
+    position: sticky;
+    max-height: 80px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 43px 0px 30px;
+    column-gap: 70px;
+}
+
+.header {
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+    font-family: "Inter", sans-serif;
+    font-size: 24px;
+}
+
+.header__logotype {
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+}
+
+.logotype__img {
+    background-image: url("./assets/png/1280px_Iogo.png");
+    width: 220px;
+    height: 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.logotype__heading {
+    font-size: 36px;
+    line-height: 44px;
+    padding-top: 8px;
+}
+
+.header__links {
+    display: flex;
+    column-gap: 28px;
+}
+
+.links__login_active {
+    color: #1a226b;
+}
+
+.wrapper__registration-form {
+    max-width: 600px;
+    max-height: 383px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 28%;
+    top: 25%;
+}
+
+.registration-form {
+    background: #ffffff;
+    box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.25);
+}
+
+.registration-form__container-form {
+    max-height: 360px;
+    max-width: 510px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 3% auto;
+}
+
+.container-form__heading {
+    font-size: calc(45 / 720 * 100vh);
+    line-height: calc(50 / 720 * 100vh);
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+}
+
+.container-form__content-form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1%;
+    height: 100%;
+}
+
+.content-form__label {
+    margin-left: 1.3%;
+    margin-top: 0.9%;
+}
+
+.content-form__input {
+    width: 100%;
+    max-height: 49px;
+    height: 100%;
+    background: #ffffff;
+    border: 2px solid #787878;
+    position: relative;
+    padding: 0;
+    padding-left: 2.6%;
+    font-size: calc(28 / 720 * 100vh);
+}
+
+.content-form__input::placeholder {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: calc(24 / 720 * 100vh);
+    line-height: calc(32 / 720 * 100vh);
+    position: absolute;
+    top: 10%;
+    color: #cccccc;
+}
+
+.content-form__input:hover {
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
+}
+
+.content-form__input:focus {
+    outline: none;
+    border: 2px solid #1b2473;
+}
+
+.content-form__btn {
+    max-width: 180px;
+    max-height: 52px;
+    width: 100%;
+    height: 100%;
+    background-color: #1a226b;
+    color: rgba(255, 255, 255, 1);
+    font-family: "Roboto", sans-serif;
+    font-size: calc(21 / 720 * 100vh);
+    font-weight: 700;
+    margin-left: 32.4%;
+    margin-top: 10.5%;
+    border: 1px solid #000000;
+}
+
+.content-form__btn:hover {
+    background: #242f8a;
+}
+
+.content-form__btn:active {
+    border: 2px solid#cccccc;
+}
+
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+    .wrapper__registration-form {
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .wrapper {
+        max-width: 768px;
+        margin: 0;
+    }
+
+    .wrapper__header {
+        padding: 0px 28px 0px 20px;
+    }
+
+    .header {
+        font-size: 16px;
+    }
+
+    .header__logotype {
+        column-gap: 34px;
+    }
+
+    .logotype__img {
+        background-image: url("./assets/png/logo768.png");
+        width: 124px;
+        height: 25px;
+    }
+
+    .logotype__heading {
+        font-size: 24px;
+        line-height: 29px;
+        padding-top: 0;
+    }
+
+    .header__links {
+        column-gap: 36px;
+    }
+
+    .wrapper__registration-form {
+        left: 0;
+        right: 0;
+        top: 19.5%;
+        margin: 0 auto;
+    }
+
+    .registration-form__container-form {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 4% auto;
+    }
+
+    .container-form__heading {
+        font-size: 50px;
+        line-height: 50px;
+        margin: 0 auto;
+    }
+
+    .container-form__content-form {
+        margin-top: 1.6%;
+    }
+
+    .content-form__label {
+        margin-left: 1.5%;
+        margin-top: 2%;
+        margin-bottom: 1%;
+        font-size: 16px;
+        line-height: 16px;
+    }
+
+    .content-form__input::placeholder {
+        top: 5px;
+    }
+
+    .content-form__btn {
+        margin-top: 10.1%;
+    }
+}
+
+@media screen and (max-width: 768px) and (min-width: 320px) {
+    .wrapper {
+    }
+
+    .wrapper__registration-form {
+    }
+
+    .registration-form__container-form {
+    }
+
+    .container-form__heading {
+    }
+
+    .content-form__label {
+    }
+
+    .content-form__input {
+    }
+
+    .content-form__btn {
+    }
+}
