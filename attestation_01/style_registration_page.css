@@ -239,13 +239,6 @@ input {
     background-position: 50% 44.2%;
 }
 
-/* .radio-button__input + label::before {
-    width: 12px;
-    height: 12px;
-    background-color: #787878;
-    border-radius: 50%;
-} */
-
 .content-form__form-textarea {
     display: flex;
     flex-direction: column;
