@@ -37,6 +37,7 @@ button.addEventListener('click', (event) => {
     errorEmail.style.display = 'inline-block';
     email.classList.toggle('error__input');
   } else if (!validateEmail(emailValue)) {
+    errorEmail.textContent = 'Email введён некорректно';
     errorEmail.style.display = 'inline-block';
     email.classList.toggle('error__input');
   } else {
