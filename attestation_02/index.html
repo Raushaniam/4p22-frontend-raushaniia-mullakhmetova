@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./style.css" />
+        <title>Attestation-01</title>
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <header class="wrapper__header header">
+                <div class="header__logotype logotype">
+                    <div class="logotype__img"></div>
+                    <div class="logotype__heading">PCS Frontend</div>
+                </div>
+                <div class="header__links links">
+                    <a
+                        class="links__registration"
+                        href="./registration_page.html"
+                        >Регистрация</a
+                    >
+                    <a
+                        class="links__login links__login_active"
+                        href="./index.html"
+                        >Вход</a
+                    >
+                </div>
+            </header>
+            <main class="wrapper__registration-form registration-form">
+                <div class="registration-form__container-form container-form">
+                    <div class="container-form__heading">Вход</div>
+                    <form class="container-form__content-form content-form">
+                        <label class="content-form__label" for="mail"
+                            >Email</label
+                        >
+                        <input
+                            class="content-form__input"
+                            id="mail"
+                            type="email"
+                            name="email"
+                            placeholder="Введите email"
+                        />
+                        <label class="content-form__label" for="word"
+                            >Пароль</label
+                        >
+                        <input
+                            class="content-form__input"
+                            id="word"
+                            type="password"
+                            name="password"
+                            placeholder="Введите пароль"
+                        />
+                        <button class="content-form__btn">Войти</button>
+                    </form>
+                </div>
+            </main>
+        </div>
+    </body>
+</html>

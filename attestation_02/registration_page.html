@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style_registration_page.css" />
+    <title>Attestation-01</title>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <header class="wrapper__header header">
+        <div class="header__logotype logotype">
+          <div class="logotype__img"></div>
+          <div class="logotype__heading">PCS Frontend</div>
+        </div>
+        <div class="header__links links">
+          <a class="links__registration links__registration_active"
+            >Регистрация</a
+          >
+          <a class="links__login" href="./index.html">Вход</a>
+        </div>
+      </header>
+      <main class="wrapper__registration-form registration-form">
+        <div class="registration-form__container-form container-form">
+          <div class="container-form__heading">Регистрация</div>
+          <form class="container-form__content-form content-form">
+            <div class="content-form__label-box">
+              <label class="label-box__label" for="mail">* Email</label>
+              <label class="label-box__error" id="error-email" for="mail"
+                >Email введён некорректно</label
+              >
+            </div>
+            <input
+              class="content-form__input"
+              id="mail"
+              type="email"
+              name="email"
+              placeholder="Введите email"
+            />
+            <div class="content-form__label-box">
+              <label class="label-box__label" for="word">* Пароль</label>
+              <label class="label-box__error" id="error-password" for="word"
+                >Поле обязательно для заполнения</label
+              >
+            </div>
+            <input
+              class="content-form__input"
+              id="word"
+              type="password"
+              name="password"
+              placeholder="Введите пароль"
+            />
+            <div class="content-form__label-box">
+              <label class="label-box__label" for="confirmation"
+                >* Подтверждение пароля</label
+              >
+              <label
+                id="error-second-password"
+                class="label-box__error"
+                for="confirmation"
+                >Пароли не совпадают</label
+              >
+            </div>
+            <input
+              class="content-form__input"
+              id="confirmation"
+              type="password"
+              name="password"
+              placeholder="Подтвердите пароль"
+            />
+            <div class="content-form__radio-button radio-button">
+              <span class="radio-button__span">Пол</span>
+              <div class="radio-button__gender gender">
+                <input
+                  class="gender__input"
+                  id="gender-man"
+                  type="radio"
+                  name="radio"
+                  checked
+                />
+                <label class="gender__label" for="gender-man">Мужчина</label>
+              </div>
+              <div class="radio-button__gender gender">
+                <input
+                  class="gender__input"
+                  id="gender-woman"
+                  type="radio"
+                  name="radio"
+                />
+                <label class="gender__label" for="gender-woman">Женщина</label>
+              </div>
+            </div>
+            <div class="content-form__form-textarea form-textarea">
+              <label class="form-textarea__label" for="textarea">О себе</label>
+              <textarea
+                class="form-textarea__textarea"
+                id="textarea"
+                placeholder="Расскажите о себе..."
+              ></textarea>
+            </div>
+            <div class="content-form__checkbox checkbox">
+              <input
+                class="checkbox__input"
+                id="agreement"
+                type="checkbox"
+                checked
+              />
+              <label class="checkbox__label" for="agreement"
+                >Я согласен получать обновления на почту</label
+              >
+            </div>
+            <button id="button" class="content-form__btn">Регистрация</button>
+          </form>
+        </div>
+      </main>
+    </div>
+    <script src="./registration_page.js"></script>
+  </body>
+</html>
